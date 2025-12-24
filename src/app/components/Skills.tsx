@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 
 const skillCategories = [
   {
@@ -157,6 +156,8 @@ const Skills = () => {
                     <Image
                       src={skill.image}
                       alt={skill.title}
+                      width={65}
+                      height={65}
                       className={`w-12 h-12 object-contain mb-2 ${
                         skill.needsBg ? "bg-white p-0.5" : ""
                       }`}

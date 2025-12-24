@@ -1,4 +1,4 @@
-'use-client'
+'use client';
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -80,6 +80,8 @@ const ExpandingCertificates: React.FC = () => {
             <Image
     src={cert.image}
     alt={cert.title}
+    width={65}
+    height={65}
     className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0"
   />
 
@@ -87,6 +89,8 @@ const ExpandingCertificates: React.FC = () => {
   <Image
     src={cert.image}
     alt={cert.title}
+    width={65}
+    height={65}
     className="absolute inset-0 w-full h-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-700"
   />
 
