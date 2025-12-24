@@ -1,131 +1,130 @@
-'use client';
+"use client";
 
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const skillCategories = [
   {
-    title: 'Languages',
+    title: "Languages",
     skills: [
       {
-        title: 'HTML',
+        title: "HTML",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
       },
       {
-        title: 'CSS',
+        title: "CSS",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
       },
       {
-        title: 'JavaScript',
+        title: "JavaScript",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       },
       {
-        title: 'TypeScript',
+        title: "TypeScript",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
       },
       {
-        title: 'C',
+        title: "C",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
       },
       {
-        title: 'C++',
+        title: "C++",
         image:
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg'
-      },
-
-    ],
-  },
-  {
-    title: 'Frontend',
-    skills: [
-      {
-        title: 'React',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
-      },
-      {
-        title: 'Next.js',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg',
-      },
-      {
-        title: 'React Native',
-        image:
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg',
-      },
-      {
-        title: 'Tailwind CSS',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg',
-      },
-      {
-        title: 'Three.js',
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" ,
-        needsBg: true,
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
       },
     ],
   },
   {
-    title: 'Backend',
+    title: "Frontend",
     skills: [
       {
-        title: 'Node.js',
+        title: "React",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
       },
       {
-        title: 'Express.js',
+        title: "Next.js",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        title: "React Native",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg",
+      },
+      {
+        title: "Tailwind CSS",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        title: "Three.js",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg",
         needsBg: true,
-      },
-      {
-        title: 'Socket.IO',
-        image:
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg',
-        needsBg: true,
-      },
-      {
-        title: 'MongoDB',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg',
-      },
-      {
-        title: 'Firebase',
-        image:
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg',
       },
     ],
   },
   {
-    title: 'Tools',
+    title: "Backend",
     skills: [
       {
-        title: 'Github',
+        title: "Node.js",
         image:
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        title: "Express.js",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
         needsBg: true,
-        
       },
       {
-        title: 'VS Code',
+        title: "Socket.IO",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg',
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
+        needsBg: true,
       },
       {
-        title: 'Postman',
+        title: "MongoDB",
         image:
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
       },
       {
-        title: 'Docker',
+        title: "Firebase",
         image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg',
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+      },
+    ],
+  },
+  {
+    title: "Tools",
+    skills: [
+      {
+        title: "Github",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+        needsBg: true,
+      },
+      {
+        title: "VS Code",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
+      },
+      {
+        title: "Postman",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+      },
+      {
+        title: "Docker",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
       },
     ],
   },
@@ -155,14 +154,12 @@ const Skills = () => {
                     className="backdrop-blur-md rounded-2xl p-6 border border-white/20 transition-all duration-500 animate-slide-up hover:border-pink-400 hover:shadow-[0_0_20px_rgba(236,72,153,0.5),0_0_40px_rgba(236,72,153,0.2)]"
                     style={{ animationDelay: `${categoryIndex * 200}ms` }}
                   >
-                    <img
+                    <Image
                       src={skill.image}
                       alt={skill.title}
-                        className={`w-12 h-12 object-contain mb-2 ${
-    skill.needsBg
-      ? 'bg-white p-0.5'
-      : ''
-  }`}
+                      className={`w-12 h-12 object-contain mb-2 ${
+                        skill.needsBg ? "bg-white p-0.5" : ""
+                      }`}
                     />
                     <h4 className="text-sm font-semibold text-white">
                       {skill.title}

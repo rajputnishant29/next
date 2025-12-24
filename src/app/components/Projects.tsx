@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import React, { useState} from 'react';
 
 const projects = [
   {
@@ -60,17 +61,17 @@ const Projects = () => {
           <div className={`relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md w-[90%] mx-auto`}>
             <div
               key={currentProject.id}
-              className={`relative h-[400px] md:h-[500px] ${
+              className={`relative h-400px md:h-500px ${
                 slideDirection === 'left' ? 'animate-slide-in-left' : 'animate-slide-in-right'
               }`}
             >
-              <img
+              <Image
                 src={currentProject.image}
                 alt={currentProject.title}
                 className="w-full h-full object-cover"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
 
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <h3 className="text-3xl md:text-4xl font-bold mb-4">{currentProject.title}</h3>

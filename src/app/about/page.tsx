@@ -3,9 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Cinzel } from 'next/font/google';
-import RotatingCards from '../components/Skills';
-// import CodeBlocks3D from '../components/3DElement';
-
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -27,8 +24,8 @@ const About = () => {
           About Me
         </h2>
 
-        <p className="text-white/80 text-lg leading-relaxed">
-          I'm <span className="font-semibold text-white">Nishant Rajput</span>, a passionate Full Stack Developer who builds responsive web and mobile applications with a focus on clean architecture and great UX. I specialize in the MERN stack and love solving real-world problems using DSA.
+        <p className="text-white/80 text-lg leading-relaxed">I am
+        <span className="font-semibold text-white"> Nishant Rajput</span>, a passionate Full Stack Developer who builds responsive web and mobile applications with a focus on clean architecture and great UX. I specialize in the MERN stack and love solving real-world problems using DSA.
         </p>
 
         <p className="text-white/80 text-lg leading-relaxed">
@@ -37,11 +34,6 @@ const About = () => {
       </motion.div>
 
     </section>
-    {/* <div className='sticky top-0 h-screen'>
-
-    <RotatingCards/>
-
-    </div> */}
     </div>
   );
 };

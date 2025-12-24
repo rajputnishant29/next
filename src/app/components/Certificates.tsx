@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface Certificate {
   title: string;
@@ -58,7 +59,7 @@ const ExpandingCertificates: React.FC = () => {
           Certificates
         </h2>
      <div className="flex items-center justify-center min-h-screen px-4">
-      <div className="flex gap-4 w-full max-w-7xl h-[450px]">
+      <div className="flex gap-4 w-full max-w-7xl h-450px">
         {certificates.map((cert) => (
           <motion.div
             key={cert.id}
@@ -76,14 +77,14 @@ const ExpandingCertificates: React.FC = () => {
             className={`relative rounded-xl overflow-hidden cursor-pointer group transition-all duration-500 border border-white/30 flex items-center gap-2 hover:border-pink-400 hover:shadow-[0_0_20px_rgba(236,72,153,0.5),0_0_40px_rgba(236,72,153,0.2)]`}
           >
             {/* Background image */}
-            <img
+            <Image
     src={cert.image}
     alt={cert.title}
     className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0"
   />
 
   {/* object-contain image shown on hover */}
-  <img
+  <Image
     src={cert.image}
     alt={cert.title}
     className="absolute inset-0 w-full h-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-700"

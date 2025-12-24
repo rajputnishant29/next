@@ -46,7 +46,7 @@ const RotatingImage: React.FC<Props> = ({ imageUrl }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="w-[350px] h-[600px]">
+        <div className="w-350px h-600px">
           <Canvas
             camera={{ position: [0, 0, 10] }}
             gl={{ preserveDrawingBuffer: true, powerPreference: 'high-performance' }}

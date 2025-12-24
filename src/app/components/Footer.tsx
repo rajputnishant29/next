@@ -5,7 +5,6 @@ import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaDownload } from 'react-
 import { MdEmail } from 'react-icons/md';
 
 const Footer = () => {
-  const hoverClass = "transition duration-300 border border-transparent rounded-full p-2 hover:text-pink-400 hover:border-pink-400 hover:shadow-[0_0_12px_rgba(236,72,153,0.6)]";
   return (
     <footer className="bg-black text-white py-10 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">

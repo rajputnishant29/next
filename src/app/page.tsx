@@ -3,9 +3,7 @@
 import React from 'react';
 import { Cinzel } from 'next/font/google';
 import { Typewriter } from 'react-simple-typewriter';
-import { div } from 'framer-motion/client';
 import About from './about/page';
-import RotatingCards from './components/Skills';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
@@ -38,7 +36,7 @@ function Page() {
 
       {/* Aesthetic Line + Typing Text */}
       <div className="z-10 flex flex-col items-center space-y-2">
-        <div className="w-12 h-[1px] bg-white/40 mb-3"></div>
+        <div className="w-12 h-1px bg-white/40 mb-3"></div>
         <p className="text-md md:text-base text-white/80 font-mono">
           <Typewriter
             words={[
